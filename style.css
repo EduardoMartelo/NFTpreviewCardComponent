@@ -1,0 +1,126 @@
+
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h2 {
+   color: hsl(178, 100%, 50%); 
+   font-size: 18px;
+   font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%)
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 330px;
+    border-radius: 15px;
+}
+
+.card {
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.thumbnail {
+    position: relative;
+    background-color: aqua;
+    border-radius: 15px;
+    height: 290px;
+}
+
+.overlay {
+    width: 100px;
+    height: 100px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;  
+    transform: translate(-50%, -50%);  
+    background-image: url('images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    left: 50%;
+    top: 50%;
+    
+  }
+  
+  .thumbnail:hover .image {
+    opacity: .6;
+  }
+  
+  .thumbnail:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.symb1 {
+    padding-right: 5px;
+    width: 10px;
+    height: 20px;
+}
+
+.symb2 {
+    padding-right: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.autor {
+    display: flex;  
+    align-items: center;    
+}
+
+.imgAutor{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
